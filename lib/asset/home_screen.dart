@@ -1,7 +1,6 @@
 import 'package:al_quran_digital/Tabs/juz_tab.dart';
 import 'package:al_quran_digital/Tabs/surah_tab.dart';
 import 'package:flutter/material.dart';
-// import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
