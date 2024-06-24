@@ -57,7 +57,7 @@ class SplashScreen extends StatelessWidget {
                             behavior: HitTestBehavior.opaque,
                             onTap: () {
                               Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) => bottemBar(),
+                                builder: (context) => const bottemBar(),
                               ));
                             },
                             child: Container(

@@ -24,7 +24,7 @@ class HomeScreen extends StatelessWidget {
                     SliverAppBar(
                       pinned: true,
                       backgroundColor: Colors.white,
-                      shape: Border(),
+                      shape: const Border(),
                       bottom: PreferredSize(
                           preferredSize: const Size.fromHeight(0),
                           child: TabBar(tabs: [

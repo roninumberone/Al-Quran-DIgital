@@ -1,9 +1,7 @@
 import 'package:al_quran_digital/asset/detail_screen.dart';
 import 'package:al_quran_digital/models/models_surah.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -21,7 +19,7 @@ class surahTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return FutureBuilder<List<Surah>>(
         future: _getSurahList(),
-        initialData: [],
+        initialData: const [],
         builder: ((context, snapshot) {
           if (!snapshot.hasData) {
             return Container();

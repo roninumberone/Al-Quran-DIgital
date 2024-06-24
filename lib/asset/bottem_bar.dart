@@ -23,11 +23,11 @@ class _bottemBarState extends State<bottemBar> {
   }
 
   final List<Widget> _peges = [
-    HomeScreen(),
-    tips(),
-    shalat(),
-    doa(),
-    bookmark()
+    const HomeScreen(),
+    const tips(),
+    const shalat(),
+    const doa(),
+    const bookmark()
   ];
   @override
   Widget build(BuildContext context) {

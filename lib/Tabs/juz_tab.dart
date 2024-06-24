@@ -8,7 +8,7 @@ class juzTab extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Container(
-          child: Text('Dalam Tahap Pengembangan'),
+          child: const Text('Dalam Tahap Pengembangan'),
         ),
       ),
     );
