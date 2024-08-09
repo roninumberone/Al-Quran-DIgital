@@ -10,6 +10,25 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+          backgroundColor: Colors.white,
+          automaticallyImplyLeading: false,
+          elevation: 0,
+          title: Row(children: [
+            const SizedBox(
+              width: 24,
+            ),
+            Text(
+              'Al-Quran',
+              style: GoogleFonts.poppins(
+                  fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+            const Spacer(),
+            IconButton(
+                onPressed: (() => {}),
+                icon: SvgPicture.asset('../assets/svg/serch-icon.svg')),
+          ])),
       body: DefaultTabController(
         length: 4,
         child: Padding(

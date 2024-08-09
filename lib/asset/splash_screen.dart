@@ -1,6 +1,6 @@
-import 'package:al_quran_digital/asset/bottem_bar.dart';
+import 'package:al_quran_digital/asset/home_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -12,30 +12,21 @@ class SplashScreen extends StatelessWidget {
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
+          padding: const EdgeInsets.symmetric(horizontal: 30),
           child: Center(
             child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
-                    ' Al Quran',
+                    'Al-Quran App',
                     style: GoogleFonts.poppins(
-                        color: Colors.black,
+                        color: const Color.fromARGB(255, 3, 3, 3),
                         fontWeight: FontWeight.bold,
                         fontSize: 28),
                   ),
                   const SizedBox(
-                    height: 16,
-                  ),
-                  Text(
-                    'Baca Al Quran Sekarang',
-                    style:
-                        GoogleFonts.poppins(fontSize: 18, color: Colors.black),
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(
-                    height: 48,
+                    height: 20,
                   ),
                   Stack(
                     clipBehavior: Clip.none,
@@ -57,14 +48,13 @@ class SplashScreen extends StatelessWidget {
                             behavior: HitTestBehavior.opaque,
                             onTap: () {
                               Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) => const bottemBar(),
-                              ));
+                                  builder: (context) => HomeScreen()));
                             },
                             child: Container(
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 40, vertical: 16),
                               decoration: BoxDecoration(
-                                  color: Colors.green,
+                                  color: Colors.blue[700],
                                   borderRadius: BorderRadius.circular(30)),
                               child: Text(
                                 'Mulai',
